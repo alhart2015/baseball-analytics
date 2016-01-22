@@ -48,7 +48,8 @@ def main():
     print 'Read in awards share players file:', time.time() - start
     # print awards_share_players_data[10]
 
-    print test.mvp_awards_shares_for_year(awards_share_players_data, 2013)
+    # print test.mvp_awards_shares_for_year(awards_share_players_data, 2013)
+    print test.cy_young_shares_for_year(awards_share_players_data, 2013)
 
     # test.awards_for_year(awards_players_data, 2013)
 

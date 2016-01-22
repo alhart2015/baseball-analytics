@@ -17,3 +17,12 @@ def mvp_awards_shares_for_year(awards_shares, year):
         if int(row[T.YEAR]) == year:
             if row[T.AWARD] == G.MVP:
                 print row
+
+def cy_young_shares_for_year(awards_shares, year):
+    '''Prints all players who had a share of either league's cy young'''
+    for row in awards_shares:
+        if row_year(row) == year and row[T.AWARD] == G.CY_YOUNG:
+            print row
+
+def row_year(row):
+    return int(row[T.YEAR])
